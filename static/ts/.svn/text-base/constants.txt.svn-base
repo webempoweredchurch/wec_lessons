@@ -1,0 +1,22 @@
+plugin.tx_weclesson_pi1 {
+# cat=plugin.tx_weclesson_pi1/file/1; type=file[html,htm,tmpl,txt]; label= Template File: HTML template file for display of the Class & Lessons
+  templateFile 		= EXT:wec_lesson/tmpl/weclesson.tmpl
+
+# cat=plugin.tx_weclesson_pi1/file/2; type=string; label= Video path
+  videoPath 		= fileadmin/video
+
+# cat=plugin.tx_weclesson_pi1/file/2; type=string; label= Audio path
+  audioPath 		= fileadmin/audio
+
+# cat=plugin.tx_weclesson_pi1/options/1; type=option[courses,classes,lessons,not_required]; label= Require Login to View... (hierachial)
+  journalWindow		= lessons
+
+# cat=plugin.tx_weclesson_pi1/options/2; type=boolean; label= Number lessons (i.e. 1. Lesson a, 2. Lesson b, etc)
+  numberLessons		= 1
+
+# cat=plugin.tx_weclesson_pi1/dimensions/1; type=; label= # characters in dropdown menus
+  dropdownMenuChars = 32
+
+# cat=plugin.tx_weclesson_pi1/dimensions/2; type=; label= Fudge factor hours for when complete lessons (if have to wait)
+  fudgeHours 		= 2
+}

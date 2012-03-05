@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/repos/wec_lessons/!svn/ver/5/trunk/pi1
+END
+class.tx_weclesson_admin.php
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/wec_lessons/!svn/ver/11/trunk/pi1/class.tx_weclesson_admin.php
+END
+.DS_Store
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/wec_lessons/!svn/ver/2/trunk/pi1/.DS_Store
+END
+class.tx_weclesson_pi1.php
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/wec_lessons/!svn/ver/12/trunk/pi1/class.tx_weclesson_pi1.php
+END
+class.tx_weclesson_pi1_wizicon.php
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/wec_lessons/!svn/ver/2/trunk/pi1/class.tx_weclesson_pi1_wizicon.php
+END
+ce_wiz.gif
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/repos/wec_lessons/!svn/ver/2/trunk/pi1/ce_wiz.gif
+END
+locallang.xml
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/repos/wec_lessons/!svn/ver/11/trunk/pi1/locallang.xml
+END

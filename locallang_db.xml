@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'wec_lesson'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_weclesson_lesson">Lesson</label>
+			<label index="tx_weclesson_lesson.num">Lesson Number</label>
+			<label index="tx_weclesson_lesson.title">Title of Lesson</label>
+			<label index="tx_weclesson_lesson.overview">Short Overview of Lesson</label>
+			<label index="tx_weclesson_lesson.description">Description of Lesson</label>
+			<label index="tx_weclesson_lesson.class_id">Class</label>
+			<label index="tx_weclesson_lesson.content">Content for Lesson</label>
+			<label index="tx_weclesson_lesson.video_files">Video Files (flv,mp4)</label>
+			<label index="tx_weclesson_lesson.audio_files">Audio Files (mp3)</label>
+			<label index="tx_weclesson_lesson.resource_files">Resource Files (.doc, .pdf, etc)</label>
+			<label index="tx_weclesson_lesson.next_lessons">Next Lesson(s) [optional]</label>
+			<label index="tx_weclesson_course">Course</label>
+			<label index="tx_weclesson_course.title">Name of Course</label>
+			<label index="tx_weclesson_course.description">Description of Course</label>
+			<label index="tx_weclesson_course.difficulty.I.0">Easy</label>
+			<label index="tx_weclesson_course.difficulty.I.1">Medium</label>
+			<label index="tx_weclesson_course.difficulty.I.2">Difficult</label>
+			<label index="tx_weclesson_course.difficulty.I.3">Hard</label>
+			<label index="tx_weclesson_course.difficulty">Difficulty of Course</label>
+			<label index="tx_weclesson_course.required_courses">Required Courses Must Take First [optional]</label>
+			<label index="tx_weclesson_course.image">Image [optional]</label>
+			<label index="tx_weclesson_class">Class</label>
+			<label index="tx_weclesson_class.num">Class Number</label>
+			<label index="tx_weclesson_class.title">Name of Class</label>
+			<label index="tx_weclesson_class.description">Description of Class</label>
+			<label index="tx_weclesson_class.course_id">Course Belongs To</label>
+			<label index="tx_weclesson_class.classes_required">Required Classes Before This</label>
+			<label index="tx_weclesson_class.image">Image [optional]</label>
+			<label index="tx_weclesson_user_data">Class User Data</label>
+			<label index="tx_weclesson_user_data.user_id">FrontEnd User ID</label>
+			<label index="tx_weclesson_user_data.current_course">Current Course</label>
+			<label index="tx_weclesson_user_data.current_class">Current Class</label>
+			<label index="tx_weclesson_user_data.current_lesson">Current Lesson</label>
+			<label index="tx_weclesson_user_data.lesson_history">Lessons Taken</label>
+			<label index="tx_weclesson_user_data.lesson_completed">Lesson Is Completed</label>
+			<label index="tx_weclesson_user_data.class_completed">Time Class Completed</label>
+			<label index="tx_weclesson_user_data.class_grade">Grade/Score for Class [optional]</label>
+
+			<label index="tt_content.list_type_pi1">WEC Lessons &amp; Classes</label>
+
+			<label index="wec_lesson.pi_flexform.sheet_main">Main</label>
+			<label index="wec_lesson.pi_flexform.view">View To Show</label>
+				<label index="wec_lesson.pi_flexform.startpage">Start Page</label>
+				<label index="wec_lesson.pi_flexform.lesson">Lesson</label>
+				<label index="wec_lesson.pi_flexform.lesson_list">Lesson List</label>
+				<label index="wec_lesson.pi_flexform.class">Class</label>
+				<label index="wec_lesson.pi_flexform.class_list">Class List</label>
+				<label index="wec_lesson.pi_flexform.course">Course</label>
+				<label index="wec_lesson.pi_flexform.course_list">Course List</label>	
+				<label index="wec_lesson.pi_flexform.admin">Admin</label>	
+			<label index="wec_lesson.pi_flexform.classPage">Class Page To Link To [optional]</label>
+
+			<label index="wec_lesson.pi_flexform.sheet_options">Options</label>
+			<label index="wec_lesson.pi_flexform.advanceLessons">When to advance lessons</label>
+				<label index="wec_lesson.pi_flexform.immediate">Immediately</label>
+				<label index="wec_lesson.pi_flexform.wait12hours">Wait 12 hours</label>
+				<label index="wec_lesson.pi_flexform.wait24hours">Wait 24 hours</label>
+				<label index="wec_lesson.pi_flexform.wait1week">Wait 7 days</label>
+				<label index="wec_lesson.pi_flexform.waitTillGraded">Wait Till Graded</label>
+			<label index="wec_lesson.pi_flexform.sequentialLessons">Require lessons taken in sequential order?</label>					
+			<label index="wec_lesson.pi_flexform.sequentialClasses">Require classes taken in sequential order?</label>					
+			<label index="wec_lesson.pi_flexform.useJournal">Use the WEC Journal for taking notes</label>					
+
+			<label index="wec_lesson.pi_flexform.sheet_admin">Admin</label>
+			<label index="wec_lesson.pi_flexform.admin_user_list">List of admin fe_users (sep by comma)</label>
+
+		</languageKey>
+	</data>
+</T3locallang>

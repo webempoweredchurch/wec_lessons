@@ -1,0 +1,167 @@
+<T3DataStructure>
+  <meta>
+    <langDisable>1</langDisable>
+    <langChildren>0</langChildren>
+  </meta>
+  <sheets>
+    <sDEF>
+      <ROOT>
+        <TCEforms>
+        <sheetTitle>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.sheet_main</sheetTitle>
+        </TCEforms>
+        <type>array</type>
+        <el>
+          <view>
+            <TCEforms>
+              <label>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.view</label>
+	          <config>
+	            <type>select</type>
+	            <items type="array">
+	            <numIndex index="1" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.startpage</numIndex>
+	                <numIndex index="1">START</numIndex>
+	              </numIndex>
+	              <numIndex index="2" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.lesson</numIndex>
+	                <numIndex index="1">LESSON</numIndex>
+	              </numIndex>
+	              <numIndex index="3" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.lesson_list</numIndex>
+	                <numIndex index="1">LESSON_LIST</numIndex>
+	              </numIndex>
+	              <numIndex index="4" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.class</numIndex>
+	                <numIndex index="1">CLASS</numIndex>
+	              </numIndex>
+	              <numIndex index="5" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.class_list</numIndex>
+	                <numIndex index="1">CLASS_LIST</numIndex>
+	              </numIndex>
+	              <numIndex index="6" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.course</numIndex>
+	                <numIndex index="1">COURSE</numIndex>
+	              </numIndex>
+	              <numIndex index="7" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.course_list</numIndex>
+	                <numIndex index="1">COURSE_LIST</numIndex>
+	              </numIndex>
+	              <numIndex index="8" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.admin</numIndex>
+	                <numIndex index="1">ADMIN</numIndex>
+	              </numIndex>	
+	            </items>
+                <default>LESSON</default>
+	            <maxitems>1</maxitems>
+	            <size>1</size>
+	          </config>
+            </TCEforms>
+          </view>
+	  	  <classPage>
+		  	<TCEforms>
+			<exclude>1</exclude>
+			<label>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.classPage</label>
+			<config>
+				<type>group</type>
+				<internal_type>db</internal_type>
+				<allowed>pages</allowed>
+				<size>1</size>
+				<maxitems>1</maxitems>
+				<minitems>0</minitems>
+			</config>
+		  	</TCEforms>
+		  </classPage>
+      </el>
+    </ROOT>
+    </sDEF>
+
+    <s_options>
+      <ROOT>
+	    <TCEforms>
+	      <sheetTitle>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.sheet_options</sheetTitle>
+	    </TCEforms>
+	     <type>array</type>
+	      <el>
+		  <advanceLessons>
+            <TCEforms>
+              <label>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.advanceLessons</label>
+	          <config>
+	            <type>select</type>
+	            <items type="array">
+	            <numIndex index="1" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.immediate</numIndex>
+	                <numIndex index="1">wait0</numIndex>
+	              </numIndex>
+	              <numIndex index="2" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.wait12hours</numIndex>
+	                <numIndex index="1">wait12</numIndex>
+	              </numIndex>
+	              <numIndex index="3" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.wait24hours</numIndex>
+	                <numIndex index="1">wait24</numIndex>
+	              </numIndex>
+	              <numIndex index="4" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.wait1week</numIndex>
+	                <numIndex index="1">wait168</numIndex>
+	              </numIndex>
+	              <numIndex index="5" type="array">
+	                <numIndex index="0">LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.waitTillGraded</numIndex>
+	                <numIndex index="1">tillGraded</numIndex>
+	              </numIndex>
+	            </items>
+                <default>wait0</default>
+	            <maxitems>1</maxitems>
+	            <size>1</size>
+	          </config>
+            </TCEforms>			
+		  </advanceLessons>		
+		  <sequentialLessons>
+            <TCEforms>
+              <label>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.sequentialLessons</label>
+              <config>
+	             <type>check</type>
+	             <default>1</default>
+              </config>
+            </TCEforms>			
+		  </sequentialLessons>
+		  <sequentialClasses>
+            <TCEforms>
+              <label>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.sequentialClasses</label>
+              <config>
+	             <type>check</type>
+	             <default>1</default>
+              </config>
+            </TCEforms>			
+		  </sequentialClasses>		
+		  <useJournal>
+            <TCEforms>
+              <label>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.useJournal</label>
+              <config>
+	             <type>check</type>
+	             <default>1</default>
+              </config>
+            </TCEforms>			
+		  </useJournal>		
+      </el>
+    </ROOT>
+    </s_options>
+
+    <s_admin>
+    <ROOT>
+    <TCEforms>
+      <sheetTitle>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.sheet_admin</sheetTitle>
+    </TCEforms>
+      <type>array</type>
+        <el>
+          <admin_user_list>
+            <TCEforms><label>LLL:EXT:wec_lesson/locallang_db.xml:wec_lesson.pi_flexform.admin_user_list</label>
+              <config>
+                <type>input</type>
+                <size>60</size>
+              </config>
+            </TCEforms>
+          </admin_user_list>
+      </el>
+    </ROOT>
+    </s_admin>
+  </sheets>
+</T3DataStructure>

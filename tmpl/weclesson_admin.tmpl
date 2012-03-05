@@ -1,0 +1,79 @@
+<!-- Templates For Admin of the WEC Lesson & Class Extension:
+
+	TEMPLATE_ADMIN_MENU
+	TEMPLATE_ADMIN_REPORT_MAIN
+	TEMPLATE_ADMIN_REPORT_USER
+	TEMPLATE_ADMIN_REPORT_CLASSES
+
+-->
+
+<!--
+=====================================================================================================
+###TEMPLATE_ADMIN_MENU### begin
+=====================================================================================================
+-->
+###ADMIN_INCLUDES###
+<div style="width:580px;margin:0;text-align:left;">
+	<div style="float:left;width:100%;margin:10px;">
+		<h2>###ADMIN_HEADER###</h2>
+		<div style="color:#444;">###ORGANIZATION_NAME###</div>
+	</div>
+	<!-- ###SHOW_ADMIN_MENU### begin -->
+	<div id="adminMenuContainer">
+		<div>###MENU_HEADER###</div>
+			<ul id="adminMenuList"> 
+				<li>###STUDENT_OVERVIEW_REPORT_MENU###</li>
+<!--				<li>###STUDENT_DETAILED_REPORT_MENU###</li> -->
+				<li>###CLASS_OVERVIEW_REPORT_MENU###</li>
+				<li>###CLASS_DETAILED_REPORT_MENU###</li>
+<!--				<li>###GROUP_REPORT_MENU###</li> 	-->
+				<li>###USERLIST_REPORT_MENU###</li> 	
+				<li>###ALLORG_REPORT_MENU###</li> 	
+			</ul>	
+	</div>	
+	<!-- ###SHOW_ADMIN_MENU### end -->
+	
+	<!-- ###SHOW_OVERVIEW_STATS### begin -->
+	<div id="overviewMenu">
+		<div class="header">###ADMIN_OVERVIEW_STATS_HEADER###</div>
+		<div><label>###OVERVIEW_NUM_USERS_LABEL###</label><span class="col">###OVERVIEW_NUM_USERS###</span></div>
+		<div><label>###OVERVIEW_USERS_PAST_MONTH_LABEL###</label><span class="col">###OVERVIEW_USERS_PAST_MONTH###</span></div>
+		<div><label>###OVERVIEW_USERS_PAST_WEEK_LABEL###</label><span class="col">###OVERVIEW_USERS_PAST_WEEK###</span></div>
+		<div><label>###OVERVIEW_COMPLETED_COURSES_LABEL###</label><span class="col">###OVERVIEW_COMPLETED_COURSES###</span></div>
+		<div><label>###OVERVIEW_TOTAL_USERS_LABEL###</label><span class="col">###OVERVIEW_TOTAL_USERS###</span></div>
+		<div><label>###OVERVIEW_NEW_USERS_LABEL###</label><span class="col">###OVERVIEW_NEW_USERS###</span></div>
+	</div>
+	<!-- ###SHOW_OVERVIEW_STATS### end -->
+	
+</div>
+<!-- ###TEMPLATE_ADMIN_MENU### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_ADMIN_WINDOW### begin
+=====================================================================================================
+-->
+<div id="reportLightbox" style="display:none;"></div>
+<script type="text/javascript">
+	showReport("###ADMIN_REPORT###");
+</script>
+
+<!-- ###TEMPLATE_ADMIN_WINDOW### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_ADMIN_REPORT### begin
+=====================================================================================================
+-->
+###ADMIN_INCLUDES###
+<div class="adminReport">
+	<div id="report-content">###REPORT###</div>
+	<div id="report-button-row">
+		<div style="float:left;width:99%">
+			<span style="float:left;padding-left:20%">###CLOSE_WINDOW###</span>
+			<span style="float:left;font-size:10px;">###CHOOSE_SORTING###</span>
+			<span style="float:right;">###DOWNLOAD_CSV_FILE###</span>
+		</div>
+	</div>
+</div>
+<!-- ###TEMPLATE_ADMIN_REPORT### end -->

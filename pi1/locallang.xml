@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>module</type>
+		<description>Language labels for plugin &quot;tx_weclesson_pi1&quot;</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="back">Back</label>
+			<label index="submit_button_label">Click here to submit value</label>
+            <label index="errorIncludeStatic">You must include static &quot;WEC Lesson &amp; Classes template&quot; for any output</label>
+            <label index="course_label">Course:</label>
+            <label index="course_num_label">Course #</label>
+            <label index="course_description_label"></label>
+            <label index="class_label">Class:</label>
+            <label index="class_num_label">Class #</label>
+            <label index="class_description_label"></label>
+            <label index="lesson_label">Lesson:</label>
+            <label index="lesson_num_label">Lesson #:</label>
+			<label index="course_take_button">Take this course</label>
+			<label index="class_take_button">Take this class</label>
+			<label index="lesson_take_button">Do this lesson</label>
+			<label index="choose_previous_lessons_label">Previous Lesson(s):</label>
+			<label index="choose_lessons_available_label">Lessons:</label>
+			<label index="choose_previous_classes_label">Previous Class(es):</label>
+			<label index="choose_classes_available_label">Classes:</label>
+			<label index="start_lesson_button">Start Lesson</label>
+			<label index="no_video_yet">No video is available yet.</label>
+			<label index="numbering_after">. </label>
+			<label index="class_is_enrolled">Is Enrolled</label>
+			<label index="no_lessons_available">There are no lessons available yet for this class.</label>
+			<label index="choose_different_class_btn">Choose A Different Class</label>
+			<label index="next_lesson_button">Go To Next Lesson</label>
+			<label index="completed_lesson_info">This lesson is completed</label>
+			<label index="completed_button">I am done with this lesson</label>
+			<label index="completed_class_info">You have finished all lessons in this class.</label>
+			<label index="completed_course_info">You have also finished the last class in this course.</label>
+			<label index="next_course_button">Choose Course</label>
+			<label index="wait_for_next_lesson">You must wait for the next lesson. You have ###TIME### left.</label>
+			<label index="wait_for_next_lesson2">You can look back at previous lesson(s) or come back later.</label>
+			<label index="over_characters">...</label>
+			<label index="login_required_lessons">You need to login to your account in order to see lessons.</label>
+			<label index="login_required_classes">You need to login to your account in order to see classes.</label>
+			<label index="login_required_courses">You need to login to your account in order to see courses.</label>
+			<label index="go_back_button">Go back</label>
+			<label index=""></label>
+			<label index=""></label>
+			<label index=""></label>
+			<label index=""></label>
+			<label index=""></label>
+			<label index=""></label>
+			<label index="name">Name</label>
+			<label index="username">UserName</label>
+			<label index="email">Email</label>
+			<label index="location">Location</label>
+			<label index="address">Address</label>
+			<label index="telephone">Phone</label>
+			<label index="city">City</label>
+			<label index="zone">State</label>
+			<label index="zip">Zip</label>
+			<label index="country">Country</label>
+
+			<label index="registered_date">Reg. Date</label>
+			<label index="current_class">Current Class</label>
+			<label index="current_course">Current Course</label>
+			<label index="class_start">Class Started</label>
+			<label index="class_completed">Class Finished</label>
+			<label index="current_lesson">Current Lesson</label>
+			<label index="completed_classes">Completed Class(es)</label>
+			<label index="assessment_score">Assessment Stage</label>
+			<label index="lastlogin">Last Login</label>
+			<label index="is_online">Last login</label>
+			<label index="attends">Attends</label>
+			<label index="num_in_class"># in class</label>
+			<label index="percent_in_class">% in class</label>
+			<label index="num_completed"># completed</label>
+			<label index="percent_completed">% completed</label>
+			<label index="avg_days_to_complete">Avg days to complete</label>
+			<label index="num_students"># of students</label>
+			<label index="num_active_in_3_months"># active (3 mo)</label>
+			<label index="num_active_in_1_month"># active (1 mo)</label>
+			<label index="num_completed"># completed a course</label>
+			<label index="percent_completed">% completed a course</label>
+			<label index="num_percent_completed"># completed a course</label>
+			<label index="num_assessment">Assessments results</label>
+			<label index="org_name">Organization</label>
+			
+			<label index="date_format">%m-%d-%y</label>
+			
+			<label index="admin_header">Admin Menu</label>
+			<label index="admin_exit_menu">Return to Admin Menu</label>
+			<label index="admin_close_window">Close Window</label>
+			<label index="admin_menu_header">Please select an option:</label>
+			
+			<label index="admin_student_overview_label">Student Overview Report</label>
+			<label index="admin_student_overview_report_menu">Student Overview Report</label>
+			<label index="admin_student_overview_file">Student_Overview</label>
+						
+			<label index="admin_student_detailed_report_menu">Student Detailed Report</label>
+			
+			<label index="admin_class_overview_report_menu">Class Snapshot Report</label>
+			<label index="admin_class_overview_file">Class_Overview</label>
+			
+			<label index="admin_class_detailed_report_menu">Class Detailed Report</label>
+			<label index="admin_class_detailed_label">Class Detailed Report</label>
+			<label index="admin_class_name_header">Class Name</label>
+
+			<label index="admin_snapshot_class_label">Snapshot Class Report</label>
+			<label index="admin_menu_sort">Sort by: </label>
+			<label index="admin_download_csv">Download CSV File</label>
+			
+		</languageKey>
+	</data>
+</T3locallang>

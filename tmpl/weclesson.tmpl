@@ -1,0 +1,199 @@
+<!-- Templates For The WEC Lesson & Class Extension:
+
+	TEMPLATE_MAIN
+	TEMPLATE_LESSON
+	TEMPLATE_CLASS
+	TEMPLATE_COURSE
+	TEMPLATE_LESSON_LIST
+	TEMPLATE_CLASS_LIST
+	TEMPLATE_COURSE_LIST
+-->
+
+<!--
+=====================================================================================================
+###TEMPLATE_START_PAGE### begin
+=====================================================================================================
+-->
+<div class="startpage">
+	<h2>###CURRENT_CLASS_LABEL### ###CLASS_TITLE###</h2>
+	<!-- ###SHOW_LESSON_MAIN### begin -->
+	<div style="font-size:14px;font-weight:bold;">###CURRENT_LESSON_LABEL### ###LESSON_TITLE### <span style="font-size:12px;font-weight:normal;">(###LESSON_NUMBER###/###TOTAL_LESSONS###)</span></div>
+	<div style="float:left;margin-top:10px;width:100%;margin-bottom:15px;">###START_LESSON_BUTTON###</div>
+	<!-- ###SHOW_LESSON_MAIN### end-->
+	<!-- ###SHOW_LESSON_INFO### begin-->
+	<div>###LESSON_INFO###</div>
+	<div>###LESSON_BUTTON###</div>
+	<!-- ###SHOW_LESSON_INFO### end-->
+	<div style="float:left;width:100%;">###CHOOSE_CLASS_LABEL### ###CLASS_DROPDOWN###</div>
+	###CLASS_INFO###
+	<div style="clear:both"></div>
+</div>	
+<!-- ###TEMPLATE_START_PAGE### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_LESSON### begin
+=====================================================================================================
+-->
+<div class="lesson">
+	<div class="topHeader"><span class="leftPart">###CLASS_LABEL### ###CLASS_TITLE###</span><span class="rightPart">###CHOOSE_CLASS_LABEL### ###CLASS_DROPDOWN###</span></div>
+	<div class="mainHeader"><span class="leftPart">###LESSON_TITLE_NUMBERED###</span><span class="rightPart"> ###CHOOSE_LESSON_LABEL### ###LESSON_DROPDOWN###</span></div>
+<!-- ######TYPO3_SEARCH begin###### -->
+	<div class="lessonOverview"><span class="leftPart">###LESSON_OVERVIEW###</span> <span class="rightPart"></span></div>
+	<!-- ###SHOW_LESSON_MAIN### begin -->
+	<div id="tabPane">
+		###TAB_MENU###
+		<div id="tabcontent-1" class="tabcontent" name="###TAB1_NAME###">
+			###VIDEO_INFO###
+	<!-- ###VIDEO_SECTION### begin-->
+
+<!-- THE WEC FLASH PLAYER -->
+	<div id="wec_flashplayer_1765" style="text-align:center;">You do not have the Flash plugin installed, or your browser does not support Javascript.  Both are required to view this Flash movie.</div>
+	<script type="text/javascript" src="typo3conf/ext/wec_flashplayer/res/swfobject.js"></script>
+    <script type="text/javascript">
+	/*<![CDATA[*/
+	var fo = new FlashObject('typo3conf/ext/wec_flashplayer/res/video.swf', 'flash', '320', '356', '8', '#C0B282');
+	fo.addParam(escape('wmode'), escape('opaque'));
+	fo.addVariable(escape('textcolor'), escape('404020'));
+	fo.addVariable(escape('classtitle'), escape(''));
+	fo.addVariable(escape('intromessage'), escape(''));
+	fo.addVariable(escape('radioLabelLow'), escape('Low (Dialup)'));
+	fo.addVariable(escape('radioLabelHigh'), escape('High (Broadband)'));
+	fo.addVariable(escape('videobase'), escape(''));
+	fo.addVariable(escape('bwbase'), escape('typo3conf/ext/wec_flashplayer/res/'));
+	fo.addVariable(escape('bgbase'), escape('uploads/tx_weclesson/'));
+	fo.addVariable(escape('bwimage'), escape('100k.jpg'));
+	fo.addVariable(escape('bgimage'), escape(''));
+	fo.addVariable(escape('videolow'), escape('uploads/tx_weclesson/###VIDEO_LOW_FILE###'));
+	fo.addVariable(escape('videohigh'), escape('uploads/tx_weclesson/###VIDEO_FILE###'));
+	fo.addVariable(escape('baseurl'), escape('###SITE_URL###'));
+	fo.addVariable(escape('lastloaded'), escape('true'));
+	fo.write('wec_flashplayer_1765');
+	/*]]>*/
+	</script>
+<!-- THE FLOWPLAYER ...
+				<a  href="###VIDEO_FILE_PATH######VIDEO_FILE###" style="display:block;width:400px;height:300px" id="flowplayer"></a>
+				<script>
+					flowplayer("flowplayer", "###PLUGIN_URL###res/flowplayer/flowplayer-3.0.7.swf", { clip: { autoPlay: false }	});
+				</script>			
+			</div>
+-->
+	<!-- ###VIDEO_SECTION### end -->
+		</div>
+		<div id="tabcontent-2" class="tabcontent" name="###TAB2_NAME###">
+			###HEADER_Thought###	###CONTENT_Thought###
+			###HEADER_Scripture###  ###CONTENT_Scripture###
+		</div>
+		<div id="tabcontent-3" class="tabcontent" name="###TAB3_NAME###">
+			###HEADER_Prayer###  		###CONTENT_Prayer###
+			###HEADER_Question_Quote### ###CONTENT_Question_Quote###
+			###HEADER_Quote###  		###CONTENT_Quote###
+			###HEADER_Action_Step###  	###CONTENT_Action_Step###
+			<div style="margin:15px 0 45px 30%;">###COMPLETED_BUTTON###</div>
+		</div>
+		
+		<div style="clear:both;"> </div>
+		<div class="sectionArrows">
+			<div id="goPrevSection" class="tabArrow"><a href="#" onclick="advanceTab(-1);return false;"><img src="###PLUGIN_URL###res/images/ArrowL.gif" border="0" alt="Prev" /></a></div>
+			<div id="goNextSection" class="tabArrow"><a href="#" onclick="advanceTab(1);return false;"><img src="###PLUGIN_URL###res/images/ArrowR.gif" border="0" alt="Next" /></a></div>
+		</div>
+		###TAB_MENU_END###
+	</div>
+	<!-- ###SHOW_LESSON_MAIN### end -->
+	
+	<!-- ###SHOW_LESSON_INFO### begin -->
+	<div style="clear:both;"> </div>
+	<div>###LESSON_INFO###</div>
+	<div>###LESSON_BUTTON###</div>
+	<!-- ###SHOW_LESSON_INFO### end -->
+<!-- ######TYPO3_SEARCH end###### -->	
+</div>
+
+
+<!-- ###TEMPLATE_LESSON### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_CLASS### begin
+=====================================================================================================
+-->
+
+<!-- ###TEMPLATE_CLASS### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_COURSE### begin
+=====================================================================================================
+-->
+
+<!-- ###TEMPLATE_COURSE### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_LESSON_LIST### begin
+=====================================================================================================
+-->
+<div class="lesson_list">
+	<div class="header">###CLASS_LABEL### ###CLASS_TITLE###</div>
+	<div class="description">###CLASS_DESCRIPTION_LABEL### ###CLASS_DESCRIPTION###</div>
+	
+	<div class="list">
+	<!-- ###LESSON_LIST_ITEM### begin -->
+	<div class="lesson_item">
+		<span class="title">###LESSON_NUM_LABEL### ###LESSON_TITLE_NUMBERED###</span>
+		<span class="overview">###LESSON_OVERVIEW###</span> 
+		<span class="description">###LESSON_DESCRIPTION###</span>
+		<span>###LESSON_TAKE_BUTTON###</span>
+	</div>
+	<!-- ###LESSON_LIST_ITEM### end -->
+	</div>
+</div>
+<!-- ###TEMPLATE_LESSON_LIST### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_CLASS_LIST### begin
+=====================================================================================================
+-->
+<div class="class_list">
+	<div class="header">###COURSE_LABEL### ###COURSE_TITLE###</div>
+	<div class="description">###COURSE_DESCRIPTION_LABEL### ###COURSE_DESCRIPTION### ###COURSE_OVERVIEW###</div>
+	
+	<div class="list">
+	<!-- ###CLASS_LIST_ITEM### begin -->
+	<div class="class_item">
+		<div class="title" style="display:block;width:100%;">
+			<span style="float:left;width:40%">###CLASS_NUM_LABEL######CLASS_NUM### ###CLASS_TITLE###</span>
+			<span style="float:left;width:40%">###CLASS_TAKE_BUTTON###<span class="isEnrolled" style="margin-left:15px;">###CLASS_IS_ENROLLED###</span></span>
+		</div>
+		<div style="display:block;margin-left:20px;line-height:1.4em;">
+			<span class="overview">###CLASS_OVERVIEW###</span> 
+			<span class="description">###CLASS_DESCRIPTION###</span>
+		</div>
+	</div>
+	<!-- ###CLASS_LIST_ITEM### end -->
+	</div>
+</div>
+<!-- ###TEMPLATE_CLASS_LIST### end -->
+
+<!--
+=====================================================================================================
+###TEMPLATE_COURSE_LIST### begin
+=====================================================================================================
+-->
+<div class="course_list">
+	<div class="header">###SCHOOL_LABEL### ###SCHOOL_TITLE###</div>
+	<div class="description">###SCHOOL_DESCRIPTION_LABEL### ###SCHOOL_DESCRIPTION###</div>
+	
+	<div class="list">
+	<!-- ###COURSE_LIST_ITEM### begin -->
+	<div class="course_item">
+		<span class="title">###COURSE_LABEL### ###COURSE_TITLE###</span>
+		<span class="overview">###COURSE_OVERVIEW###</span> 
+		<span class="description">###COURSE_DESCRIPTION###</span>
+		<span>###COURSE_TAKE_BUTTON###</span>
+	</div>
+	<!-- ###COURSE_LIST_ITEM### end -->
+	</div>
+</div>
+<!-- ###TEMPLATE_COURSE_LIST### end -->

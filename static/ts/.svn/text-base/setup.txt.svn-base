@@ -1,0 +1,111 @@
+# Check if we're in frontend editing mode and dynamically change to a USER_INT
+#[userFunc =  checkViewShouldCache()] 
+#plugin.tx_weclesson_pi1 = USER_INT
+#[global]
+
+plugin.tx_weclesson_pi1 = USER_INT
+
+plugin.tx_weclesson_pi1 {
+	templateFile 		= {$plugin.tx_weclesson_pi1.templateFile}
+	videoPath 			= {$plugin.tx_weclesson_pi1.videoPath}
+	audioPath 			= {$plugin.tx_weclesson_pi1.audioPath}
+	journalWindow 		= {$plugin.tx_weclesson_pi1.journalWindow}
+	numberLessons 		= {$plugin.tx_weclesson_pi1.numberLessons}
+	dropdownMenuChars	= {$plugin.tx_weclesson_pi1.dropdownMenuChars}
+	fudgeHours			= {$plugin.tx_weclesson_pi1.fudgeHours}
+
+	isLoaded		    = yes
+
+  # Re-use the RTE parseFunc configuration for normal content
+  general_stdWrap {
+    parseFunc < tt_content.text.20.parseFunc
+  }
+
+}
+
+plugin.tx_weclesson_pi1._CSS_DEFAULT_STYLE (
+
+/*-------------------------- MAIN LESSON STYLES ---------------------------*/
+.lesson {
+	width: 100%;
+}
+.lesson .topHeader {
+	float: left;
+	width: 100%;
+}
+.lesson .mainHeader {
+	float: left;
+	width:	100%;
+	margin: 10px 0px 5px 0px;
+}
+.lesson .leftPart {
+	float: left;
+	margin-left: 15px;
+}
+.lesson .rightPart {
+	float:	right;
+	text-align:right;
+	font-size:85%;
+	margin-right:10px;
+}
+.lesson .topHeader .leftPart {
+	font-weight:bold;
+	font-size: 105%;	
+	color: #664;
+}
+
+.lesson .mainHeader .leftPart {
+	font-weight:bold;
+	font-size: 125%;
+	color: #440;
+}
+.lesson .overviewHeader .leftPart {
+	font-size: 100%;
+	font-style: italic;
+	color: #440;
+}
+
+.sectionArrows {
+	width:		100%;
+	text-align:	center;
+	margin:		0px auto;
+}
+
+.lesson_list, .class_list {
+	font-size: 105%;
+}
+.lesson_list .header, .class_list .header {
+	font-size: 120%;
+	font-weight: bold;
+}
+.lesson_list .description, .class_list .description {
+	font-style: italic;
+	font-size: 100%;
+}
+.lesson_item, .class_item {
+	font-size: 90%;
+	margin-top: 4px;
+	margin-bottom: 8px;
+	clear: left;
+	line-height:1.8em;
+	padding: 6px;
+}
+.lesson_item .title, .class_item .title {
+	float: left;
+	font-weight:bold;
+	padding:2px;
+}
+.lesson_item .overview, .lesson_item .description, .class_item .description {
+	float: left;
+	font-weight: normal;
+	font-size: 85%;
+	margin-left: 4px;
+}
+
+.isEnrolled {
+	font-weight: bold;
+	color: #E44;
+	font-size: 80%;
+}
+
+)
